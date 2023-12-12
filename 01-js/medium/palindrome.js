@@ -4,6 +4,11 @@
 */
 
 function isPalindrome(str) {
+  const cleanedStr = str.toLowerCase().replace(/\W/g, '');
+  for(i=0; i<=cleanedStr.length/2; i++){
+    if (cleanedStr[i] !== cleanedStr[cleanedStr.length-1-i]) 
+      return false;
+  }
   return true;
 }
 

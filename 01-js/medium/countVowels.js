@@ -6,7 +6,9 @@
 */
 
 function countVowels(str) {
-    // Your code here
+    const vowels = /[aeiouAEIOU]/g;
+    const vowelsMatch = str.match(vowels)
+    return vowelsMatch ? vowelsMatch.length : 0;
 }
 
 module.exports = countVowels;
